@@ -3627,11 +3627,11 @@ _paq.push(['trackPageView']);
 				$.when($("#scroll_"+page.toLowerCase()).load(page.toLowerCase()+".php")).then(function(){
 					$.when(saveLastLocation('Menu',page,'')).then(function(){
 						$.when($("#back_button").show()).then(function(){
+							$("#page_"+page).show();
 						});	
 					});	
 				});		
 			});		
-			$("#page_"+page).show();
         };
 		
 		$("body").on('click', ".toggle_plus,.toggle_minus", function (){
