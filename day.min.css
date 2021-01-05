@@ -1,0 +1,50 @@
+@charset "ISO-8859-1";body, html{height:100%;margin:0;font-family:"Times New Roman, Arial";background-color:#fff;color:#000;min-height:480px;min-width:240px;text-decoration:none;font-size:16px;}
+.head_c{background-color:#fff;}
+.head_site_name{padding-top:2px;vertical-align:bottom;height:15px;min-height:15px;padding-left:6px;font-family:'Times New Roman';text-align:center;text-justify:inter-character;letter-spacing:0.85rem;word-spacing:.5rem;color:#2196F3;font-size:12px;white-space:nowrap;background-color:#fff;}
+.head{padding-bottom:2px;height:23px;min-height:23px;color:#2196F3;text-align:center;vertical-align:top;font-size:18px;white-space:nowrap;background-color:#fff;}
+.center_box_250{color:#000;text-align:left;border:0px solid #000;width:100%;display:inline-table;width:240px;max-width:400px;padding:5px 0px 5px 0px;white-space:nowrap;}
+.key_xlit, .content_pron, .version_isbn{border:1px solid black;border-collapse:collapse;}
+.default_record{font-style:italic;color:#555;cursor:default;white-space:nowrap;text-align:center;}
+.single_record_parent{font-style:italic;color:#555;cursor:default;font-size:14px;white-space:nowrap;text-align:center;}
+.single_record_subs{font-style:italic;cursor:default;color:#999;font-weight:normal;font-size:12px;}
+.single_record{font-style:italic;color:#999;cursor:pointer;text-align:justify;}
+.booktab_output_parent_title_ib{padding-top:15px;text-align:left;font-size:26px;font-weight:bold;color:#222;cursor:default;}
+.booktab_output_parent_title_en{text-align:left;font-size:16px;font-weight:bold;color:#222;cursor:default;text-indent:20px;padding-bottom:7px;}
+.booktab_output_title_ib{font-size:24px;font-weight:bold;cursor:pointer;color:#555;text-align:left;padding-bottom:5px;}
+.booktab_output_title_en{font-size:16px;cursor:pointer;text-indent:20px;color:#888;font-weight:normal;}
+.menu_cell_box_sec{font-size:20px;font-weight:bold;color:#555;width:19.9%;float:left;text-align:center;vertical-align:middle;padding:10px 0 10px 0;border:1px solid #999;cursor:pointer;}
+.menu_cell_box_rec{font-size:20px;font-weight:bold;color:#555;width:19.9%;float:left;text-align:center;vertical-align:middle;padding:10px 0 10px 0;border:1px solid #999;cursor:pointer;}
+.strongs_title{font-size:20px;color:#555;font-weight:bold;padding-bottom:9px;}
+.strongs_header{color:#777;font-size:20px;font-weight:bold;padding:5px;}
+.strongs_emp{color:#777;font-size:14px;font-style:italic;}
+.strongs_definition{font-size:20px;color:#555;font-weight:bold;}
+.select_message_sec{color:#000;font-weight:normal;padding-bottom:10px;}
+.select_message_rec{color:#000;font-weight:normal;padding-bottom:10px;}
+.result_message{color:#000;padding-top:10px;text-align:center;}
+.settings_menu_header{font-size:22px;font-weight:bold;color:#555;padding:5px;background-color:#d0d0d0;}
+.terms_container h3{height:100%;font-size:14px;cursor:default;padding:5px;text-align:center;color:#222;}
+.toggle_plus{color:#000;background-color:#fff;font-size:40px;font-weight:bold;cursor:pointer;}
+.toggle_minus{color:#000;background-color:#fff;font-size:30px;font-weight:bold;cursor:pointer;}
+.toggle_text_size_label{color:#000;background-color:#fff;}
+.toggle_current_font_size{padding:7px 0px 3px 0px;color:#2196F3;background-color:#fff;font-weight:normal;}
+.ui-widget-content{border:1px solid #d0d0d0;background:#fff;color:#000;}
+.ui-dialog .ui-dialog-content{position:relative;border:0;padding:.5em 1em;background:#fff;overflow:auto;background-color:#fff;color:#000;}
+.dialog_output_parent_title_ib{padding-top:15px;text-align:left;font-size:22px;font-weight:bold;color:#222;cursor:default;}
+.dialog_output_parent_title_en{text-align:left;font-size:14px;font-weight:bold;color:#222;cursor:default;text-indent:20px;padding-bottom:7px;}
+.dialog_output_title_ib{font-size:20px;font-weight:bold;color:#555;text-align:left;}
+.dialog_output_title_en{font-size:14px;text-indent:20px;color:#888;font-weight:normal;}
+.writeup_menu_list{color:#222;font-size:20px;cursor:pointer;padding-bottom:7px;font-family:'Times New Roman';}
+.writeup_menu_list-active{color:#222;font-size:20px;cursor:pointer;padding-bottom:7px;font-family:'Times New Roman';}
+.media_menu_list{color:#222;font-size:20px;cursor:pointer;padding-bottom:7px;font-family:'Times New Roman';}
+.media_menu_list-active{color:#222;font-size:20px;cursor:pointer;padding-bottom:7px;font-family:'Times New Roman';}
+.book_menu_list{color:#222;font-size:20px;cursor:pointer;white-space:nowrap;padding-bottom:7px;font-family:'Times New Roman';}
+.book_menu_list-active{color:#222;font-size:20px;cursor:pointer;white-space:nowrap;padding-bottom:7px;font-family:'Times New Roman';}
+.menu_list{color:#222;font-size:22px;cursor:pointer;white-space:nowrap;padding-bottom:7px;font-family:'Times New Roman';}
+.menu_list-active{color:#222;font-size:22px;cursor:pointer;white-space:nowrap;padding-bottom:7px;font-family:'Times New Roman';}
+.book_distributor{color:#c0c0c0;text-decoration:none;cursor:pointer;font-size:16px;}
+.book_page_count{color:#c0c0c0;font-style:italic;text-decoration:none;font-size:16px;}
+.book_link{color:#000;text-decoration:none;white-space:nowrap;cursor:pointer;font-size:16px;}
+.confirming_witnesses{color:#222;font-size:22px;padding-bottom:5px;font-family:'Times New Roman';white-space:nowrap;}
+.timeline_title{color:#222;font-size:20px;padding-top:7px;white-space:nowrap;text-align:center;}
+.timeline_subtitle{color:#222;font-size:18px;padding-top:7px;text-align:center;}
+.timeline_additional{color:#222;font-size:16px;padding-top:7px;text-align:center;}
