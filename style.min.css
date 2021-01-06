@@ -315,8 +315,8 @@ input:checked + .slider_word:before{-webkit-transform:translateX(26px);-ms-trans
 .sections_c{width:100%;content:"";display:table;clear:both;}
 #r_display{width:100%;content:"";display:table;clear:both;}
 #r_display_all{width:100%;content:"";display:table;clear:both;text-align:justify;}
-.wel_border_614_921{min-height:884px;height:884px;min-width:589px;width:589px;padding:5px 0px 5px 0px;border:1px solid #d0d0d0;color:#000;background-color:#f8f8f8;background-image:url("/images/tzitzit_bg_589_884.png");background-repeat:no-repeat;background-position:bottom;}
-.wel_border{min-height:324px;height:324px;min-width:280px;max-width:280px;width:280px;padding:5px 0px 5px 0px;border:1px solid #d0d0d0;color:#000;background-color:#f8f8f8;background-image:url("/images/tzitzit_bg_272_329.png");background-repeat:no-repeat;background-position:bottom;}
+.wel_border_614_921{min-height:884px;height:884px;min-width:589px;width:589px;padding:5px 0px 5px 0px;border:1px solid #d0d0d0;color:#000;background-color:#f8f8f8;background-image:url("https://cdn.jsdelivr.net/gh/dwhitestone/dist/tzitzit_bg_589_884.png");background-repeat:no-repeat;background-position:bottom;}
+.wel_border{min-height:324px;height:324px;min-width:280px;max-width:280px;width:280px;padding:5px 0px 5px 0px;border:1px solid #d0d0d0;color:#000;background-color:#f8f8f8;background-image:url("https://cdn.jsdelivr.net/gh/dwhitestone/dist/tzitzit_bg_272_329.png");background-repeat:no-repeat;background-position:bottom;}
 .wel_hr{padding:8px 0px 0px 10px;font-size:10px;font-family:'Times New Roman';text-align:center;text-justify:inter-character;letter-spacing:.49rem;word-spacing:.4rem;}
 .wel_le{font-weight:bold;font-size:27px;font-family:'Times New Roman';text-align:center;text-justify:inter-character;letter-spacing:.1rem;word-spacing:.1rem;}
 .wel_p{padding-left:12px;font-weight:bold;font-size:26px;font-family:'Times New Roman';text-align:center;text-justify:inter-character;letter-spacing:0.55rem;}
@@ -406,10 +406,10 @@ input:checked + .slider_word:before{-webkit-transform:translateX(26px);-ms-trans
 .load_timeline_records{text-decoration:none;cursor:pointer;}
 .our_era{background-color:#FFFF00;}
 .timeline_details{font-size:16px;padding:5px;vertical-align:top;text-align:left;}
-.timeline_bg_great_left{background-image:url(/images/arr_left.png);background-repeat:no-repeat;background-position:bottom;}
-.timeline_bg_cre_left{background-image:url(/images/arr_left_creation.png);background-repeat:no-repeat;background-position:bottom;}
-.timeline_bg_cre_line{background-image:url(/images/arr_line.png);background-repeat:no-repeat;background-position:bottom;}
-.timeline_bg_cre_right{background-image:url(/images/arr_right.png);background-repeat:no-repeat;background-position:bottom;}
+.timeline_bg_great_left{background-image:url("https://cdn.jsdelivr.net/gh/dwhitestone/dist/arr_left.png");background-repeat:no-repeat;background-position:bottom;}
+.timeline_bg_cre_left{background-image:url("https://cdn.jsdelivr.net/gh/dwhitestone/dist/arr_left_creation.png");background-repeat:no-repeat;background-position:bottom;}
+.timeline_bg_cre_line{background-image:url("https://cdn.jsdelivr.net/gh/dwhitestone/dist/arr_line.png");background-repeat:no-repeat;background-position:bottom;}
+.timeline_bg_cre_right{background-image:url("https://cdn.jsdelivr.net/gh/dwhitestone/dist/arr_right.png");background-repeat:no-repeat;background-position:bottom;}
 .timeline_calendar{background-color:#d0d0d0;font-weight:bold;font-size:22px;white-space:nowrap;padding:2px;}
 .timeline_days{background-color:#d0d0d0;font-style:italic;font-weight:bold;font-size:18px;white-space:nowrap;padding:2px;}
 .timeline_weeks{background-color:#d0d0d0;font-style:italic;font-weight:bold;font-size:18px;white-space:nowrap;padding:2px;}
