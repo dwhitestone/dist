@@ -1,5 +1,5 @@
 @charset "ISO-8859-1";
-.splash{width:300px;height:300px;position:absolute;left:50%;top:50%;margin-left:-150px;margin-top:-150px;background-image:url("https://cdn.jsdelivr.net/gh/dwhitestone/dist/apple-touch-icon.png");background-repeat:no-repeat;background-position:bottom;}
+.splash{width:300px;height:300px;position:absolute;left:50%;top:50%;margin-left:-150px;margin-top:-220px;background-image:url("https://cdn.jsdelivr.net/gh/dwhitestone/dist/splash-300.png");background-repeat:no-repeat;background-position:bottom;}
 .ui-loader-header{font-size:0.1px;color:#fff;display:none;}
 .video{margin-left:auto;margin-right:auto;display:block;text-decoration:none;cursor:pointer;}
 .poster{margin-left:auto;margin-right:auto;display:none;text-decoration:none;cursor:pointer;}
@@ -100,7 +100,7 @@ h3{text-align:center;font-family:"Times New Roman,Arial";color:#2196F3;text-deco
 .bg_image_middle{}
 .results_search{text-align:center;padding:0px 5px 0px 5px;cursor:default;color:#999;font-size:12px;}
 @import url("evyop.woff2");@font-face{font-family:'evyopimport';src:url('evyop.woff2')format('woff');font-weight:normal;font-style:normal;line-height:1;}
-body{font-family:Arial,"Times New Roman";min-width:240px;}
+body{font-family:Arial;min-width:240px;}
 #thenames{font-family:evyopimport;font-style:normal;}
 *{box-sizing:border-box}
 .sel{font-weight:bold;color:#555;}
