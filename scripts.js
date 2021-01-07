@@ -4044,7 +4044,7 @@
 			
 						//if session logged in
 						if($("#li").val()==1){
-							$("#search_tab_hist").hide();
+							$("#search_tab_hist").show();
 							$("#sign_in_container").hide();
 							$("#sign_in").hide();
 							$("#sign_out").show();
@@ -4061,7 +4061,7 @@
 								$("#login_info").show();
 							}
 						}else{
-							$("#search_tab_hist").show();
+							$("#search_tab_hist").hide();
 							setTimeout(function(){ 
 								loadSearchHistory();
 							}, 1);			
