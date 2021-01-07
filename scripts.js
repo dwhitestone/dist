@@ -1844,12 +1844,12 @@ _paq.push(['trackPageView']);
                    // $('img[id="menu_image'+page_id+'"]').attr('src', '');
                     $("#menu_"+page).removeClass('menu_cell').addClass('menu_cell-active');
                     $("#menu_title"+page_id).removeClass('menu_title_g').addClass('menu_title');
-                    $('img[id="menu_image'+page_id+'"]').attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+page_id+'.png').attr('class', 'lazy');
+                    $('img[id="menu_image'+page_id+'"]').attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+page_id+'.png');
                 }else{
                    // $('img[id="menu_image'+page_id+'"]').attr('src', '');
                     $("#menu_"+page).removeClass('menu_cell').addClass('menu_cell-active');
                     $("#menu_title"+page_id).removeClass('menu_title').addClass('menu_title_g');
-                    $('img[id="menu_image'+page_id+'"]').attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+page_id+'_g.png').attr('class', 'lazy');
+                    $('img[id="menu_image'+page_id+'"]').attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+page_id+'_g.png');
                 }            
             });
 			
@@ -2172,7 +2172,7 @@ _paq.push(['trackPageView']);
 					_deselectQueue.push(ui.selecting);
 					}
 					selectToCopy();
-					copyShareMessage('Select records, then copy. <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/copy.png" width="15px" height="15px" border="none" class="lazy">','close');
+					copyShareMessage('Select records, then copy. <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/copy.png" width="15px" height="15px" border="none">','close');
 				},
 				unselecting: function (event, ui) {
 					$(ui.unselecting).addClass('ui-selected');
@@ -2300,7 +2300,7 @@ _paq.push(['trackPageView']);
 			$(".selectable").selectable("enable");
 			$(".scroll_read").css("scrollbar-width", "auto");
 
-			copyShareMessage('Select records, then copy. <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/copy.png" width="15px" height="15px" border="none" class="lazy">','open');
+			copyShareMessage('Select records, then copy. <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/copy.png" width="15px" height="15px" border="none">','open');
 		});
         
 		function selectToCopy() {
@@ -2341,7 +2341,7 @@ _paq.push(['trackPageView']);
 			});
 
 			if (i == 0) {
-				copyShareMessage('Select records, then copy. <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/copy.png" width="15px" height="15px" border="none" class="lazy">','alert');
+				copyShareMessage('Select records, then copy. <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/copy.png" width="15px" height="15px" border="none">','alert');
 			} else {
 				$("#cancelshare").hide();
 
@@ -2352,7 +2352,7 @@ _paq.push(['trackPageView']);
 				$temp.remove();
 				
 				$("#foot_copy_active").val("");
-				copyShareMessage('Coping to clipboard... for sharing <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/share_white.png" height="15px" width="15px" border="none" class="lazy">','copied');
+				copyShareMessage('Coping to clipboard... for sharing <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/share_white.png" height="15px" width="15px" border="none">','copied');
 				
 				if($('#foot_copy').is(":visible")==true){
 					setTimeout(function() {
@@ -3084,15 +3084,15 @@ _paq.push(['trackPageView']);
 				for(var i=5; i < 10; i++){
 					if($("#menu_image"+i).attr('id')!=undefined){
 						if($("#menu_image"+i).attr('id')=="menu_image"+i){
-							$("#menu_image"+i).attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+i+'_g.png').attr('class', 'lazy');
+							$("#menu_image"+i).attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+i+'_g.png');
 						}
 					}
 				}
 				
-				$(".icon_writeup").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/writeup_d.png').attr('class', 'lazy');
-				$(".icon_timeline").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/timeline_d.png').attr('class', 'lazy');
-				$(".icon_video").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/video_d.png').attr('class', 'lazy');
-				$(".icon_audio").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/audio_d.png').attr('class', 'lazy');
+				$(".icon_writeup").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/writeup_d.png');
+				$(".icon_timeline").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/timeline_d.png');
+				$(".icon_video").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/video_d.png');
+				$(".icon_audio").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/audio_d.png');
 
 				$('link[data-role="day"]').prop( "disabled", true );
 				$('link[data-role="night"]').prop( "disabled", false );
@@ -3108,15 +3108,15 @@ _paq.push(['trackPageView']);
 				for(var i=5; i < 10; i++){
 					if($("#menu_image"+i).attr('id')!=undefined){
 						if($("#menu_image"+i).attr('id')=="menu_image"+i){
-							$("#menu_image"+i).attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+i+'.png').attr('class', 'lazy');
+							$("#menu_image"+i).attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+i+'.png');
 						}
 					}
 				}
 				
-				$(".icon_writeup").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/writeup.png').attr('class', 'lazy');
-				$(".icon_timeline").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/timeline.png').attr('class', 'lazy');
-				$(".icon_video").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/video.png').attr('class', 'lazy');
-				$(".icon_audio").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/audio.png').attr('class', 'lazy');
+				$(".icon_writeup").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/writeup.png');
+				$(".icon_timeline").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/timeline.png');
+				$(".icon_video").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/video.png');
+				$(".icon_audio").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/audio.png');
 				
 				$('link[data-role="night"]').prop( "disabled", true );
 				$('link[data-role="day"]').prop( "disabled", false );
@@ -3193,7 +3193,7 @@ _paq.push(['trackPageView']);
 				$("#sign_in").show();
 			}else{
 				$("#sign_in_container").show();
-				$(".sign_in_plus_minus").html('<img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/close_red.png" width="15px" height="15px" border="none" class="lazy">');
+				$(".sign_in_plus_minus").html('<img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/close_red.png" width="15px" height="15px" border="none">');
 				$("#sign_in").hide();
 			};
     	};
