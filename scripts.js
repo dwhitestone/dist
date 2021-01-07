@@ -1088,7 +1088,7 @@
 				maxHeight: 300,
 				minWidth: '99%',
 				maxWidth: 260,
-				title: "Revised Concordance: "+term_name,
+				title: "Term: "+term_name,
 				closeOnEscape: true,
 				  close: function() {
 					$("#xlit_dialog").attr('css','display:none');
@@ -1844,12 +1844,12 @@ _paq.push(['trackPageView']);
                    // $('img[id="menu_image'+page_id+'"]').attr('src', '');
                     $("#menu_"+page).removeClass('menu_cell').addClass('menu_cell-active');
                     $("#menu_title"+page_id).removeClass('menu_title_g').addClass('menu_title');
-                    $('img[id="menu_image'+page_id+'"]').attr('src', '/images/icons/menu'+page_id+'.png');
+                    $('img[id="menu_image'+page_id+'"]').attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+page_id+'.png');
                 }else{
                    // $('img[id="menu_image'+page_id+'"]').attr('src', '');
                     $("#menu_"+page).removeClass('menu_cell').addClass('menu_cell-active');
                     $("#menu_title"+page_id).removeClass('menu_title').addClass('menu_title_g');
-                    $('img[id="menu_image'+page_id+'"]').attr('src', '/images/icons/menu'+page_id+'_g.png');
+                    $('img[id="menu_image'+page_id+'"]').attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+page_id+'_g.png');
                 }            
             });
 			
@@ -2172,7 +2172,7 @@ _paq.push(['trackPageView']);
 					_deselectQueue.push(ui.selecting);
 					}
 					selectToCopy();
-					copyShareMessage('Select records, then copy. <img src="/images/copy.png" width="15px" height="15px" border="none">','close');
+					copyShareMessage('Select records, then copy. <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/copy.png" width="15px" height="15px" border="none">','close');
 				},
 				unselecting: function (event, ui) {
 					$(ui.unselecting).addClass('ui-selected');
@@ -2253,7 +2253,7 @@ _paq.push(['trackPageView']);
 				$("#foot_share_copy").hide();
 				hidePaginate();
 				$("#copy_message_container").addClass('copy_message');
-				$(".copy_message").css("background-color","#2196F3");
+				$(".copy_message").css("background-color","#008000");
 				$("#copy_message_container").show();
 				$("#message_dialog").html(message);
 				setTimeout(function() {
@@ -2300,7 +2300,7 @@ _paq.push(['trackPageView']);
 			$(".selectable").selectable("enable");
 			$(".scroll_read").css("scrollbar-width", "auto");
 
-			copyShareMessage('Select records, then copy. <img src="/images/copy.png" width="15px" height="15px" border="none">','open');
+			copyShareMessage('Select records, then copy. <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/copy.png" width="15px" height="15px" border="none">','open');
 		});
         
 		function selectToCopy() {
@@ -2341,7 +2341,7 @@ _paq.push(['trackPageView']);
 			});
 
 			if (i == 0) {
-				copyShareMessage('Select records, then copy. <img src="/images/copy.png" width="15px" height="15px" border="none">','alert');
+				copyShareMessage('Select records, then copy. <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/copy.png" width="15px" height="15px" border="none">','alert');
 			} else {
 				$("#cancelshare").hide();
 
@@ -2352,7 +2352,7 @@ _paq.push(['trackPageView']);
 				$temp.remove();
 				
 				$("#foot_copy_active").val("");
-				copyShareMessage('Coping to clipboard... for sharing <img src="/images/share_white.png" height="15px" width="15px" border="none">','copied');
+				copyShareMessage('Coping to clipboard... for sharing <img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/share_white.png" height="15px" width="15px" border="none">','copied');
 				
 				if($('#foot_copy').is(":visible")==true){
 					setTimeout(function() {
@@ -3084,15 +3084,15 @@ _paq.push(['trackPageView']);
 				for(var i=5; i < 10; i++){
 					if($("#menu_image"+i).attr('id')!=undefined){
 						if($("#menu_image"+i).attr('id')=="menu_image"+i){
-							$("#menu_image"+i).attr('src', '/images/icons/menu'+i+'_g.png');
+							$("#menu_image"+i).attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+i+'_g.png');
 						}
 					}
 				}
 				
-				$(".icon_writeup").attr('src', '/images/icons/writeup_d.png');
-				$(".icon_timeline").attr('src', '/images/icons/timeline_d.png');
-				$(".icon_video").attr('src', '/images/icons/video_d.png');
-				$(".icon_audio").attr('src', '/images/icons/audio_d.png');
+				$(".icon_writeup").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/writeup_d.png');
+				$(".icon_timeline").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/timeline_d.png');
+				$(".icon_video").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/video_d.png');
+				$(".icon_audio").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/audio_d.png');
 
 				$('link[data-role="day"]').prop( "disabled", true );
 				$('link[data-role="night"]').prop( "disabled", false );
@@ -3108,15 +3108,15 @@ _paq.push(['trackPageView']);
 				for(var i=5; i < 10; i++){
 					if($("#menu_image"+i).attr('id')!=undefined){
 						if($("#menu_image"+i).attr('id')=="menu_image"+i){
-							$("#menu_image"+i).attr('src', '/images/icons/menu'+i+'.png');
+							$("#menu_image"+i).attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/menu'+i+'.png');
 						}
 					}
 				}
 				
-				$(".icon_writeup").attr('src', '/images/icons/writeup.png');
-				$(".icon_timeline").attr('src', '/images/icons/timeline.png');
-				$(".icon_video").attr('src', '/images/icons/video.png');
-				$(".icon_audio").attr('src', '/images/icons/audio.png');
+				$(".icon_writeup").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/writeup.png');
+				$(".icon_timeline").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/timeline.png');
+				$(".icon_video").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/video.png');
+				$(".icon_audio").attr('src', 'https://cdn.jsdelivr.net/gh/dwhitestone/dist/audio.png');
 				
 				$('link[data-role="night"]').prop( "disabled", true );
 				$('link[data-role="day"]').prop( "disabled", false );
@@ -3193,7 +3193,7 @@ _paq.push(['trackPageView']);
 				$("#sign_in").show();
 			}else{
 				$("#sign_in_container").show();
-				$(".sign_in_plus_minus").html('<img src="/images/close_red.png" width="15px" height="15px" border="none">');
+				$(".sign_in_plus_minus").html('<img src="https://cdn.jsdelivr.net/gh/dwhitestone/dist/close_red.png" width="15px" height="15px" border="none">');
 				$("#sign_in").hide();
 			};
     	};
@@ -3269,7 +3269,7 @@ _paq.push(['trackPageView']);
 				}
 			});
     	};
-		//document.getElementById("sign_out").addEventListener("click", function(){ signOut(); }); 
+		document.getElementById("sign_out").addEventListener("click", function(){ signOut(); }); 
         
         function clearSearch(){
             if($('#search_toggle').is(":checked")==false){
@@ -4022,7 +4022,7 @@ _paq.push(['trackPageView']);
 							loadDefaultSettings();
 						}
 					}else{
-						signOut();
+						//signOut();
 						loadDefaultSettings();
 					}
 				}
@@ -4050,25 +4050,18 @@ _paq.push(['trackPageView']);
     	};
 
         function loadDefaultSettings(){	
-		
 			$.when(loadBooks()).then(function(){
-				var word_toggle = 2;
-				if($('#word_toggle').is(":checked")==true){
-					word_toggle = 1;
-				}				
+				var word_toggle = $('#word_toggle_ses').val();
 				$.when(wordToggle(word_toggle,"noload")).then(function(){
-					var xlit = $("#show_xlit").val();
+					var xlit = $("#show_xlit").val();				
 					$.when(xlitToggle(xlit,"noload")).then(function(){
 						var fontsize = parseInt($("#current_font_size").val());
 						$.when(elementFontReSize(fontsize,"noload")).then(function(){
-							var theme = 1;
-							if($('#theme_toggle').is(":checked")){
-								theme = 2;
-							}
+							var theme = $('#theme_ses').val();
 							$.when(themeToggle(theme,"noload")).then(function(){
-								var alephTav = $("#aleph_tav").val()
-								$("#aleph_tav").val(alephTav).attr("selected", "selected");
-								$("#aleph_tav_icon").val(alephTav).attr("selected", "selected");
+								var alephtav = $("#aleph_tav_ses").val()
+								$("#aleph_tav").val(alephtav).attr("selected", "selected");
+								$("#aleph_tav_icon").val(alephtav).attr("selected", "selected");
 								
 								loadSearchTerms();
 							});
@@ -4082,11 +4075,11 @@ _paq.push(['trackPageView']);
         function startupProcess() {
 
 			$.when(rememberMeCheck()).then(function(){
-				$.when(loadDefaultSettings()).then(function(){
-					$.when(loadBookTitles()).then(function(){
+				$.when(loadBookTitles()).then(function(){
+					$.when(loadDefaultSettings()).then(function(){
 						$(".book_list_bot").last().removeClass('book_list_bot');
 			
-						//if seesion logged in
+						//if session logged in
 						if($("#li").val()==1){
 							$("#search_tab_hist").hide();
 							$("#sign_in_container").hide();
@@ -4155,9 +4148,10 @@ _paq.push(['trackPageView']);
 								});
 							});
 						};	
-
 					});
+
 				});
+
 			});
         }
 		
@@ -4166,4 +4160,5 @@ _paq.push(['trackPageView']);
 		}, 1);
 		
         resizeScroll();
+	
 	});
