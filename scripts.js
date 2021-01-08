@@ -106,7 +106,7 @@
 				if(prev_val<=-1){
 					prev_val=images.length-1;
 				}
-				$('#slideshow_image').attr('src','https://cdn.jsdelivr.net/gh/dwhitestone/dist/'+images[prev_val]+'.jpg');
+				$('#slideshow_image').attr('src','https://cdn.jsdelivr.net/gh/dwhitestone/dist/'+images[prev_val]+'.jpg').attr('alt'),'Demonology by King James I';
 				document.getElementById("img_no").value=prev_val;
 			//});
 			//$('#slideshow_image').fadeIn(1000);
@@ -118,7 +118,7 @@
 				if(next_val>=images.length){
 					next_val=0;
 				}
-				$('#slideshow_image').attr('src','https://cdn.jsdelivr.net/gh/dwhitestone/dist/'+images[next_val]+'.jpg');
+				$('#slideshow_image').attr('src','https://cdn.jsdelivr.net/gh/dwhitestone/dist/'+images[next_val]+'.jpg').attr('alt'),'Demonology by King James I';
 				document.getElementById("img_no").value=next_val;
 			//});
 			//$('#slideshow_image').fadeIn(1000);
