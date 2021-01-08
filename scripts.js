@@ -1407,6 +1407,8 @@
 
 		$("body").on('click', "#back_button", function (){
 			
+			pauseAllVideo();
+
             var active_page = "";
             $('.menu_cell-active').each(function() {
                 active_page = $(this).attr('id');
