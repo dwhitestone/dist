@@ -3587,13 +3587,11 @@
 		function showMenuPage(page){
             var page = page.toLowerCase();
 			$.when($('.site_page').hide()).then(function(){
-				$.when($("#scroll_"+page.toLowerCase()).load(page.toLowerCase()+".php")).then(function(){
-					$.when(saveLastLocation('Menu',page,'')).then(function(){
-						$.when($("#back_button").show()).then(function(){
-							$("#page_"+page).show();
-						});	
+				$.when(saveLastLocation('Menu',page,'')).then(function(){
+					$.when($("#back_button").show()).then(function(){
+						$("#page_"+page).show();
 					});	
-				});		
+				});			
 			});		
         };
 		
