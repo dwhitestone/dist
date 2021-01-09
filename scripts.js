@@ -1088,7 +1088,7 @@
 				maxHeight: 300,
 				minWidth: '99%',
 				maxWidth: 260,
-				title: "Term: "+term_name,
+				title: term_name,
 				closeOnEscape: true,
 				  close: function() {
 					$("#xlit_dialog").attr('css','display:none');
