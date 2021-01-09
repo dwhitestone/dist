@@ -4,34 +4,23 @@
 		//####### START video buffering START ####### 
 		function videoLoad(video_id) {
 			console.log('Video loading');
-
+			
+			document.getElementById('vid_'+video_id).style.display = 'none'; // replace video element with
+			document.getElementById('poster_'+video_id).style.display = 'block'; // poster while buffering
+			
 			document.getElementById('video-progress-container_'+video_id).innerHTML = 'Buffering: <progress id="video-progress_'+video_id+'" value="0" max="100">0%</progress>';
 			//document.getElementById('video-button').style.display = 'none'; // no longer needed
 			
 			var videoBuffer = new Mediabuffer(document.getElementById('vid_'+video_id), videoProgress, videoReady);
 			
 			videoBuffer.load();
-			
-			if($('#vid_'+video_id).css('display') == 'block'){
-				document.getElementById('vid_'+video_id).style.display = 'none'; // replace video element with
-			}
-			if($('#poster_'+video_id).css('display') == 'none'){
-				document.getElementById('poster_'+video_id).style.display = 'block'; // poster while buffering
-			}
-			if($('video-progress-container_'+video_id).css('display') == 'block'){
-				document.getElementById('video-progress-container_'+video_id).style.display = 'none'; // no longer needed
-			}
-
+			document.getElementById('video-progress-container_'+video_id).style.display = 'none'; // no longer needed
 		}
 		function videoProgress(percentBuffered) {
 			var video_id = $("#video_load_number").val();
 			console.log('Video progress: ' + percentBuffered + '%');
-			
-			var attr = $('video-progress_'+video_id).attr('value');
-			if (typeof attr !== typeof undefined && attr !== false) {
-				document.getElementById('video-progress_'+video_id).setAttribute('value', percentBuffered);
-				document.getElementById('video-progress_'+video_id).innerHTML = percentBuffered + '%';
-			}			
+			document.getElementById('video-progress_'+video_id).setAttribute('value', percentBuffered);
+			document.getElementById('video-progress_'+video_id).innerHTML = percentBuffered + '%';
 		}
 		function videoReady() {
 			console.log('Video ready!');
@@ -41,9 +30,7 @@
 			setTimeout(function() {	
 				$("#video_load_number").val(''); 	
 			}, 1);
-    var action = document.getElementById('vid_'+video_id).play();
-	if(action !== undefined){
-		action.promise().done(function(){
+			
 			document.getElementById('video-progress_'+video_id).setAttribute('value', 100);
 			document.getElementById('video-progress_'+video_id).innerHTML = '100%';
 			
@@ -53,15 +40,6 @@
 			document.getElementById('vid_'+video_id).setAttribute('controls', 'controls');
 			
 			document.getElementById('vid_'+video_id).play();
-
-		})
-	}
-    //if (promise !== undefined) {
-       // promise.then(_ => {
-       // }).catch(error => {
-            // do something
-        //});
-   // }			
 			
 		}
 		// ================================================================================
