@@ -2289,7 +2289,7 @@
 				var book_title_en = $("#book_title_en").html();
 				var parent_book_title_ib = $("#parent_book_title_ib").html();
 				var parent_book_title_en = $("#parent_book_title_en").html();
-				var link = "<?=$http_var.$domain ?>/?b=" + book_id + "&s=" + section_id + "&r=" + firstElem;
+				var link = "https://hebrewrecords.com/?b=" + book_id + "&s=" + section_id + "&r=" + firstElem;
 
 				$("#foot_copy_active").val("1");
 				$("#clipboard").html("");
