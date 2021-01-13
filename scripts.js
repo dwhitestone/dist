@@ -4077,6 +4077,7 @@
 								$('#url').attr("data-b","");
 								$('#url').attr("data-s","");
 								$('#url').attr("data-r","");
+								$('#menu_container').show();
 							})
 							
 						}else if(url_s!=""){
@@ -4084,6 +4085,7 @@
 							$.when(loadSearchDetails(url_s,'')).then(function(){
 								$.when(showPage("Search")).then(function(){
 									$('#url').attr("data-s","");
+									$('#menu_container').show();
 								});
 							});
 							
@@ -4095,6 +4097,7 @@
 										setTimeout(function(){ 
 											$("#restored_names").remove();	
 											$('#url').attr("data-rn","");
+											$('#menu_container').show();
 										}, 12000);	
 									});
 								});
@@ -4102,11 +4105,8 @@
 				
 						}else{	
 							$.when(loadLastLocation()).then(function(){
-								$.when($('#menu_container').show()).then(function(){
-									$.when(clearURLNameTags()).then(function(){
-										//done...
-									});
-								});
+								$('#menu_container').show();
+								clearURLNameTags();
 							});
 						};	
 					});
