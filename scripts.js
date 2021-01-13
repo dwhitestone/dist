@@ -3850,12 +3850,10 @@
 									$(".tab_link[tab-id='tab_3']").addClass("tab_link-active");
 									$("#tab_3").show();
 									
-									//console.log('loading page...');
-									$.when(showPage('Read')).then(function(){
-										//console.log('clearing url...');
-										//clear url params if successful
-										clearURLNameTags();
-									})
+									showPage('Read')
+									//console.log('clearing url...');
+									//clear url params if successful
+									clearURLNameTags();
 								})
 							})
 						});		
