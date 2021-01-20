@@ -2651,6 +2651,8 @@
 							 
 							$.when(elementFontReSize(data[0]['fontsize'])).then(function(){
 								$.when(themeToggle(data[0]['theme'])).then(function(){
+									$("#theme_ses").val(data[0]['theme']);
+									
 									$.when(xlitToggle(data[0]['show_xlit'],"")).then(function(){
 										$("#show_xlit").val(data[0]['show_xlit']);
 										
@@ -3931,7 +3933,10 @@
 						
 						if(data.length>0){
 							$.when(elementFontReSize(data[0]['fontsize'])).then(function(){
+								
 								$.when(themeToggle(data[0]['theme'])).then(function(){
+									$("#theme_ses").val(data[0]['theme']);
+									
 									$.when(xlitToggle(data[0]['show_xlit'],"")).then(function(){
 										$("#show_xlit").val(data[0]['show_xlit']);
 										
