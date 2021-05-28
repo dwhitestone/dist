@@ -2723,7 +2723,7 @@
 			var data = $("#reset_password_form").serialize();
 					
 			$.ajax({                
-				type : 'GET',
+				type : 'POST',
 				url  : 'reset_password_process.php',
 				data : data,
 				beforeSend: function(){	
